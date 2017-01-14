@@ -1,5 +1,13 @@
 # stocksnap-php
-PHP HTTP client to access Stocksnap's API
+Unofficial PHP HTTP client to access Stocksnap's API
+
+## Installation
+
+`Stocksnap-PHP` uses [Composer](https://getcomposer.org/). To use it, require the library
+
+```
+composer require diza/stocksnap
+```
 
 ## Usage
 
