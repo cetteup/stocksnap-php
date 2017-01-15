@@ -74,5 +74,5 @@ Retrieve photos for a search term.
 
 ```php
 $stocksnap = new Diza\Stocksnap\HttpClient();
-$photos = $stocksnap->search($terms, $$order_by, $sort_order, $page);
+$photos = $stocksnap->search($terms, $order_by, $sort_order, $page);
 ```
