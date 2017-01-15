@@ -53,3 +53,26 @@ Retrieve author's/user's photos.
 $stocksnap = new Diza\Stocksnap\HttpClient();
 $photos = $stocksnap->author_photos($author_id, $page);
 ```
+
+===
+
+#### Diza\Stocksnap\HttpClient->search($terms, $$order_by, $sort_order, $page)
+Retrieve photos for a search term.
+
+*Note:* You need to instantiate an httpclient object first
+
+**Arguments**
+
+  Argument     | Type | Opt/Required | Note  |
+---------------|------|--------------|-------|
+`$terms`    | string  | Required | Search terms (separated by `+`)
+`$order_by`    | string  | Opt *(Default: relevance)* | Accepted values: `relevance`, `date`, `trending`, `views`, `downloads`, `favorites`
+`$sort_order`  | string  | Opt *(Default: desc)*    | Accepted values: `asc`, `desc`
+`$page`    | int  | Opt *(Default: 1)*
+
+**Example**
+
+```php
+$stocksnap = new Diza\Stocksnap\HttpClient();
+$photos = $stocksnap->search($terms, $$order_by, $sort_order, $page);
+```

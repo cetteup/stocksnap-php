@@ -1,6 +1,6 @@
 {
   "name": "diza/stocksnap",
-  "description": "PHP HTTP client to access Stocksnap's API",
+  "description": "Unofficial PHP HTTP client to access Stocksnap's API",
   "keywords": ["Stocksnap", "http", "web service", "client", "HTTP client"],
   "license": "MIT",
   "require": {
